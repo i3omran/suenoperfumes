@@ -1,0 +1,389 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    font-family:'Almarai', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(4, 9, 30, 0.9);
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.1)), url(/images/IMG_2503.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:35em;
+    padding: 0;
+    margin: -175px ;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'Almarai', sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: brown;
+    display: block;
+    margin-top: 4px;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: -10%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50% -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 80px;
+    margin-bottom: -15px;
+    font-family: 'Aref Ruqaa', serif;
+}
+.main-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    padding: 5px 45px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.main-btn:hover{
+    border: 1px solid brown;
+    background-color: brown;
+    transform: translate(1.1);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2.5em;
+    padding: 30px;
+    margin: 0;
+
+}
+.content{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0;
+   
+}
+.con-btn{
+    display: inline-block;
+    top: 50%;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    padding: 5px 45px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.con-btn:hover{
+    background-color: brown;
+    transform: translate(1.1);
+    border:1px solid brown;
+}
+.middle-text{
+    color: #fff;
+    position: absolute;
+    top: 200%;
+    left: 10%;
+    transform: translate(-50% -50%);
+    text-align: center;
+
+}
+.main-content{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+::-webkit-scrollbar {
+    width: 16px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: rgb(7, 5, 26) ;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+.main-content ::-webkit-scrollbar{
+    width: 60px;
+
+}
+.specialcollection{
+    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.1)), url(/images/pexels-vitalii-odobesku-11560835.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.specialcollection2{
+    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.1)), url(/images/pexels-duané-viljoen-10604607.jpg);
+    background-size: cover;
+}
+.specialcollection3{
+    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.1)), url(/images/pexels-chen-chen-15328478.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content2{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0;
+
+}
+.content3{
+    display: flex;
+    background-position:center;
+    background-size: cover;
+    margin-top: 0;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width:300px;
+    margin: 25px;
+    text-align: center;
+    font-family: arial;
+    border: 4px solid black;
+    background-color: white;
+    object-fit: contain;
+    transition: 0.5s ease;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: inline-block;
+
+}  
+.price {
+    color: brown;
+    font-size: 22px;
+}  
+.card button {
+    border: 1px solid brown;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 13px;
+    transition: 0.5s ease;
+    font-family:'Almarai', sans-serif;
+}
+.card button:hover {
+    background-color: brown;
+    color: white;
+    transform: translate(1.1);
+}
+.card img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card img:hover{
+    opacity: 0.9;
+}
+.card h1, p{
+    color: black;
+}
+.con-content{
+    display: flex;
+    justify-content: center;
+}
+.con-title{
+    text-align: center;
+    color: white;
+}
+.con-card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px #fff(1, 1, 1, 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 50px;
+    transition: 0.7s ease;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.con-card:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color: white;
+    padding: 1.1em;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.icons{
+    padding-left: 180px;
+}
+.icons .fa{
+    color: red;
+    margin: 0 25px;
+    cursor: pointer;
+    padding: 18px 0px;
+    transition: 0.5s;
+}
+.icons .fa:hover{
+    transform: scale(1.1);
+}
+.con-info{
+    color: brown;
+}
+.con-info p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.container{
+    display:flexbox;
+    width: 50%;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 60px 40px 40px;
+    margin-bottom: 20px;
+    margin-left: 235px;
+    margin-top: 50px;
+}
+.container h1{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.container .content-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content-form .left-side{
+    width: 25%;
+    height: 100%;
+}
+
+.container .content-form .right-side{
+    width: 75%;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box-message textarea{
+    margin-bottom: 10px;
+    height: 100px;
+
+}
+.phone-details .text-two{
+    margin-bottom: 20px;
+}
+
+/*media queries*/
+
+@media all and (max-width: 700px){
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        font-size: 14px;
+    }
+    .con-content{
+        display: block;
+        justify-content: center;
+
+    }
+    .con-card{
+        width: 15em;
+        margin: 30px;
+        align-items: center;
+        margin-left: 49px;
+    }
+    .text-box{
+        font-size: 10px;
+        top: 40%;
+        left: 27%;
+    }
+    nav img{
+        width:30em;
+        margin-right: -180px;
+        position: absolute;
+    }
+    .middle-text{
+        color: #fff;
+        position: absolute;
+        top: 125%;
+        left: 7%;
+        transform: translate(-50% -50%);
+        text-align: center;
+    }
+    .icons{
+        padding-left: 30px;
+    }
+    .icons .fa{
+        display: flex;
+        margin: 0px 80px;
+    }
+    .nav-links ul li::after {
+        content: '';
+        width: 0%;
+        height: 0px;
+        background: brown;
+        display: block;
+        margin-top: 4px;
+        transition: 0.5s;
+    }
+}
